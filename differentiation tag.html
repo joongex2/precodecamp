@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>ความเหมือน</th>
+                <th>ความต่าง</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lthr&gt & &ltbr&gt</td>
+                <td>เป็น empty tag</td>
+                <td>hr จะขึ้นบรรทัดใหม่เพิ่มเส้นแล้วขึ้นบรรทัดใหม่ br แค่ขึ้นบรรทัดใหม่</td>
+            </tr>
+            <tr>
+                <td>&ltul&gt & &ltol&gt</td>
+                <td>ไว้สร้าง list เหมือนกัน</td>
+                <td>ul หน้า list แต่ละ list ขึ้นต้นด้วย bullet หรือ สัญลักษณ์ ส่วน ol ขึ้นต้นด้วยตัวเลขไล่ลำดับลงไป</td>
+            </tr>
+            <tr>
+                <td>&ltselect&gt & &ltcheckbox&gt & &ltradio button&gt</td>
+                <td>select กับ radio button สามารถเลือกได้ค่าเดียว<br>checkbox กับ radio เป็น type ของ input tag</td>
+                <td>checkbox เลือกได้หลายค่า ส่วน select, radio ได้ค่าเดียว<br>select tag ชนิดนึง แต่ checkbox และ radio
+                    เป็น type ของ input tag อีกที
+                    <br>checkbox ต้องกดลูกศรก่อนถึงโชว์ค่าทั้งหมด แต่ select, radio โชว์ ค่าทั้งหมดเลย</td>
+            </tr>
+            <tr>
+                <td>&ltdiv&gt & &ltspan&gt</td>
+                <td>มักใช้เพื่อกำหนด css/ จัด layout ให้ข้อความหรือ element ต่างๆ</td>
+                <td>div เป็น block element คือจะขึ้นบรรทัดใหม่ต่อจาก element ก่อนหน้า span เป็น inline element
+                    คือไม่ขึ้นบรรทัดใหม่ต่อจาก element ก่อนหน้า (มักใช้กับข้อความสั้นๆในประโยค)</td>
+            </tr>
+            <tr>
+                <td>&ltscript&gt & &ltstyle&gt</td>
+                <td>เป็น non-empty tag</td>
+                <td>script ใช้เพื่อ ใส่ javascript code ใน html (ใส่ใน body), style ใช้เพื่อใส่ css code ใน html (ใส่ใน
+                    head)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

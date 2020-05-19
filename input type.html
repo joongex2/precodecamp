@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>type</th>
+                <th>ลักษณะ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>button</td>
+                <td>สร้างปุ่ม</td>
+            </tr>
+            <tr>
+                <td>checkbox</td>
+                <td>สร้าง checkbox ที่ติีกได้มากกว่า 1 ค่า</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>เป็นปุ่มกดแล้วขึ้น color picker เมื่อเลือกแล้วเก็บเป็น rgb #ฐาน16 6 หลัก</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td>เก็บเป็นค่า mm/dd/yyyy ซึ่งพิมพ์เปลี่ยนเองหรือ กด datepicker ด้านขวาได้</td>
+            </tr>
+            <tr>
+                <td>datetime-local</td>
+                <td>เก็บเป็นค่า mm/dd/yyyy ซึ่งพิมพ์เปลี่ยนเองหรือ กด datepicker ด้านขวาได้ และเก็บ time ใน format 12:59
+                    AM </td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>เป็น input มีการ validate ค่าให้เป็นไปตาม format ของ email (xxx@xxx.com) หากไม่ผ่านจะ submit ไม่ผ่าน
+                </td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td>เป็นปุ่ม Choose File กดแล้วสามารถเลือก file จาก device ได้</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>จะไม่เห็น ช่อง input ซึ่งใช้เพื่อ ส่งค่า (สามารถกำหนด value ได้) ตอน form submit โดยที่ไม่แสดงให้
+                    user เห็น</td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>ใช้เพื่อแทนปุ่ม submit ซึ่งกำหนดรูปเอง ของ form ได้และส่ง x, y ของการคลิ๊กในภาพ ด้วย</td>
+            </tr>
+            <tr>
+                <td>month</td>
+                <td>เก็บค่าเป็น format December 2020 และสามารถใช้ datepicker ด้านขวาเลือกเดือนได้</td>
+            </tr>
+            <tr>
+                <td>number</td>
+                <td>เก็บค่าตัวเลข ซึ่งบังคับให้พิมพ์แค่ตัวเลข หรือใช้ลูกศรด้านขวาสามารถปรับเพิ่มลดค่าได้ สามารถกำหนด max
+                    min ได้</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>เก็บค่าซึ่งเวลาพิมพ์จะไม่โชว์ค่า (โชว์เป็น bullet สีดำแทน)</td>
+            </tr>
+            <tr>
+                <td>radio</td>
+                <td>ใน tag input name เดียวกันจะเลือกค่าได้ค่าเดียว</td>
+            </tr>
+            <tr>
+                <td>range</td>
+                <td>เป็น slider แนวนอน เก็บค่าตัวเลข มีปุ่มเพื่อเลื่อนซ้ายขวาได้ ซ้ายสุดเป็น min ขวาสุดเป็น max</td>
+            </tr>
+            <tr>
+                <td>reset</td>
+                <td>เป็นปุ่มเพื่อ reset ค่าทุกอย่างใน form ทุกอย่างเป็น default value</td>
+            </tr>
+            <tr>
+                <td>search</td>
+                <td>ใช้ในการพิมพ์ค่าเพื่อ search คล้ายๆ กับ input type text แต่มีกากบาทด้านขวา</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td>ทำปุ่มใน form เพื่อใช้ในการส่งค่าไปยัง action ที่อยู่ใน form tag</td>
+            </tr>
+            <tr>
+                <td>tel</td>
+                <td>ใช้เพื่อ validate ค่าให้ตรงกับ pattern ของมือถือ เช่น 123-45-678 ใช้
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" หาก ผิด format จะ submit ไม่ผ่านและขึ้นว่า Please match the
+                    requested format.</td>
+            </tr>
+            <tr>
+                <td>text</td>
+                <td>ใช้เพื่อเก็บค่า value อะไรก็ได้โดยพิมพ์เอา</td>
+            </tr>
+            <tr>
+                <td>time</td>
+                <td>เก็บค่าเวลาใน format 12:59 AM มีปุ่มกากบาทเพื่อลบและขึ้นลงเพื่อเพิ่มลดค่าตอนเลือกช่องต่างๆ</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td>ใช้เพื่อเก็บค่าและ validate ค่าที่เป็น format url หากไม่ผ่านจะแสดง Please enter a URL</td>
+            </tr>
+            <tr>
+                <td>week</td>
+                <td>ใช้เพื่อเก็บค่า week ใน ปีใดๆ format Week 51, 2020 มีกากบาทเพื่อ reset และใช้ week picker ได้</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    ข้อ 1
+    <table>
+        <thead>
+            <tr>
+                <th>ชื่อ tag</th>
+                <th>attribute</th>
+                <th>คำอธิบาย</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lth&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>&ltp&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>&ltdiv&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td rowspan="12">&ltimg&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>alt ***required</td>
+                <td>Specifies an alternate text for an image</td>
+            </tr>
+            <tr>
+                <td>crossorigin</td>
+                <td>Allow images from third-party sites that allow cross-origin access to be used with canvas</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>Specifies the height of an image</td>
+            </tr>
+            <tr>
+                <td>ismap</td>
+                <td>Specifies an image as a server-side image-map</td>
+            </tr>
+            <tr>
+                <td>longdesc</td>
+                <td>specifies a hyperlink to a detailed description of an image</td>
+            </tr>
+            <tr>
+                <td>referrerpolicy</td>
+                <td>Specifies which referrer to use when fetching the image</td>
+            </tr>
+            <tr>
+                <td>sizes</td>
+                <td>Specifies image sizes for different page layouts</td>
+            </tr>
+            <tr>
+                <td>src ***required</td>
+                <td>Specifies the URL of an image</td>
+            </tr>
+            <tr>
+                <td>srcset</td>
+                <td>Specifies the URL of the image to use in different situations</td>
+            </tr>
+            <tr>
+                <td>usemap</td>
+                <td>Specifies an image as a client-side image-map</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>Specifies the width of an image</td>
+            </tr>
+            <tr>
+                <td rowspan="10">&lta&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>download</td>
+                <td>Download file when clicking on the link (instead of navigating to the file)</td>
+            </tr>
+            <tr>
+                <td>href</td>
+                <td>Specifies the URL of the page the link goes to</td>
+            </tr>
+            <tr>
+                <td>hreflang</td>
+                <td>Specifies the language of the linked document</td>
+            </tr>
+            <tr>
+                <td>media</td>
+                <td>Specifies what media/device the linked document is optimized for</td>
+            </tr>
+            <tr>
+                <td>ping</td>
+                <td>Specifies a space-separated list of URLs to which, when the link is followed, post requests with the
+                    body ping will be sent by the browser (in the background). Typically used for tracking.</td>
+            </tr>
+            <tr>
+                <td>referrerpolicy</td>
+                <td>Specifies which referrer to send</td>
+            </tr>
+            <tr>
+                <td>rel</td>
+                <td>Specifies the relationship between the current document and the linked document</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>Specifies where to open the linked document</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Specifies the media type of the linked document</td>
+            </tr>
+            <tr>
+                <td>&ltul&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td rowspan="4">&ltol&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>reversed</td>
+                <td>Specifies that the list order should be descending (9,8,7...)</td>
+            </tr>
+            <tr>
+                <td>start</td>
+                <td>Specifies the start value of an ordered list</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Specifies the kind of marker to use in the list</td>
+            </tr>
+            <tr>
+                <td>&lttable&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td rowspan="9">&ltform&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>accept-charset</td>
+                <td>Specifies the character encodings that are to be used for the form submission</td>
+            </tr>
+            <tr>
+                <td>action</td>
+                <td>Specifies where to send the form-data when a form is submitted</td>
+            </tr>
+            <tr>
+                <td>autocomplete</td>
+                <td>Specifies whether a form should have autocomplete on or off</td>
+            </tr>
+            <tr>
+                <td>enctype</td>
+                <td>Specifies how the form-data should be encoded when submitting it to the server (only for
+                    method="post")</td>
+            </tr>
+            <tr>
+                <td>method</td>
+                <td>Specifies the HTTP method to use when sending form-data</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Specifies the name of a form</td>
+            </tr>
+            <tr>
+                <td>novalidate</td>
+                <td>Specifies that the form should not be validated when submitted</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>Specifies where to display the response that is received after submitting the form</td>
+            </tr>
+            <tr>
+                <td rowspan="12">&ltbutton&gt</td>
+                <td>global & event attributes</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>autofocus</td>
+                <td>Specifies that a button should automatically get focus when the page loads</td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td>Specifies that a button should be disa</td>
+            </tr>
+            <tr>
+                <td>form</td>
+                <td>Specifies which form the button belongs to</td>
+            </tr>
+            <tr>
+                <td>formaction</td>
+                <td>Specifies where to send the form-data when a form is submitted. Only for type="submit"</td>
+            </tr>
+            <tr>
+                <td>formenctype</td>
+                <td>Specifies how form-data should be encoded before sending it to a server. Only for type="submit"</td>
+            </tr>
+            <tr>
+                <td>formmethod</td>
+                <td>Specifies how to send the form-data (which HTTP method to use). Only for type="submit"</td>
+            </tr>
+            <tr>
+                <td>formnovalidate</td>
+                <td>Specifies that the form-data should not be validated on submission. Only for type="submit"</td>
+            </tr>
+            <tr>
+                <td>formtarget</td>
+                <td>Specifies where to display the response after submitting the form. Only for type="submit"</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Specifies a name for the button</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>Specifies the type of button</td>
+            </tr>
+            <tr>
+                <td>value</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Global Attributes</h3>
+    <table>
+        <thead>
+            <th>attribute</th>
+            <th>คำอธิบาย</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>accesskey</td>
+                <td>The accesskey attribute specifies a shortcut key to activate/focus an element.</td>
+            </tr>
+            <tr>
+                <td>class</td>
+                <td>Specifies one or more classnames for an element (refers to a class in a style sheet)</td>
+            </tr>
+            <tr>
+                <td>contenteditable</td>
+                <td>The contenteditable attribute specifies whether the content of an element is editable or not.</td>
+            </tr>
+            <tr>
+                <td>data-*</td>
+                <td>Used to store custom data private to the page or application</td>
+            </tr>
+            <tr>
+                <td>dir</td>
+                <td>The dir attribute specifies the text direction of the element's content.</td>
+            </tr>
+            <tr>
+                <td>draggable</td>
+                <td>Specifies whether an element is draggable or not</td>
+            </tr>
+            <tr>
+                <td>dropzone</td>
+                <td>Specifies whether the dragged data is copied, moved, or linked, when dropped</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>Specifies that an element is not yet, or is no longer, relevant</td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Specifies a unique id for an element</td>
+            </tr>
+            <tr>
+                <td>lang</td>
+                <td>Specifies the language of the element's content</td>
+            </tr>
+            <tr>
+                <td>spellcheck</td>
+                <td>Specifies whether the element is to have its spelling and grammar checked or not</td>
+            </tr>
+            <tr>
+                <td>style</td>
+                <td>Specifies an inline CSS style for an element</td>
+            </tr>
+            <tr>
+                <td>tabindex</td>
+                <td>Specifies the tabbing order of an element</td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>Specifies extra information about an element</td>
+            </tr>
+            <tr>
+                <td>translate</td>
+                <td>Specifies whether the content of an element should be translated or not</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Event Attributes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>attribute</th>
+                <th>คำอธิบาย</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>onafterprint</td>
+                <td>Execute a JavaScript when a page has started printing, or if the print dialogue box has been closed
+                </td>
+            </tr>
+            <tr>
+                <td>onbeforeprint</td>
+                <td>Execute a JavaScript when a page is about to be printed</td>
+            </tr>
+            <tr>
+                <td>onbeforeunload</td>
+                <td>Execute a JavaScript when the page is about to be unloaded</td>
+            </tr>
+            <tr>
+                <td>onerror</td>
+                <td>Execute a JavaScript if an error occurs when loading an image</td>
+            </tr>
+            <tr>
+                <td>onhashchange</td>
+                <td>Execute a JavaScript when the anchor part has been changed</td>
+            </tr>
+            <tr>
+                <td>onload</td>
+                <td>Execute a JavaScript immediately after a page has been loaded</td>
+            </tr>
+            <tr>
+                <td>onmessage</td>
+                <td>Script to be run when the message is triggered</td>
+            </tr>
+            <tr>
+                <td>onoffline</td>
+                <td>Execute a JavaScript when the browser starts to work offline</td>
+            </tr>
+            <tr>
+                <td>ononline</td>
+                <td>Execute a JavaScript when the browser starts to work online</td>
+            </tr>
+            <tr>
+                <td>onpagehide</td>
+                <td>Script to be run when a user navigates away from a page</td>
+            </tr>
+            <tr>
+                <td>onpageshow</td>
+                <td>Script to be run when a user navigates to a page</td>
+            </tr>
+            <tr>
+                <td>onpopstate</td>
+                <td>Script to be run when the window's history changes</td>
+            </tr>
+            <tr>
+                <td>onresize</td>
+                <td>Fires when the browser window is resized</td>
+            </tr>
+            <tr>
+                <td>onstorage</td>
+                <td>Script to be run when a Web Storage area is updated</td>
+            </tr>
+            <tr>
+                <td>onunload</td>
+                <td>Fires once a page has unloaded (or the browser window has been closed)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
